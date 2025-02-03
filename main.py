@@ -11,8 +11,11 @@ mainContent = soup.find('body')
 heading = mainContent.find('b', class_ = 'hnname')
 print(heading.text)
 
-news = mainContent.find('tr', class_ = 'athing submission')
-print(news.text)
+
+
+for news in mainContent.find_all('tr', class_ = 'athing submission'):
+
+    print(news)
 
 
 # print(mainContent)
