@@ -26,6 +26,9 @@ for time in content.find_all('span', class_ = 'age'):
     times = content.find('span', class_='age')
     print(times)
 
+    points = times.find('span', class_ = 'score')
+    print(points)
+
 
     
 
