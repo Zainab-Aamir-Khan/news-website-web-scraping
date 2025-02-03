@@ -19,7 +19,11 @@ for news in mainContent.find_all('tr', class_ = 'athing submission'):
     print(myNews)
 
     time = news.find('span', class_ = 'age').text
-    print
+    if time == 'minutes':
+        print(time)
+    
+    
+
 
 
 
