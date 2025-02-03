@@ -7,9 +7,11 @@ soup = BeautifulSoup(url, 'lxml')
 
 # print(requests.get("https://news.ycombinator.com/news").status_code)
 mainContent = soup.find('body')
+content = mainContent.find('td', class_ = 'subtext')
 # print(mainContent.prettify())
 heading = mainContent.find('b', class_ = 'hnname')
 print(heading.text)
+
 
 
 
@@ -20,6 +22,12 @@ for news in mainContent.find_all('tr', class_ = 'athing submission'):
 
     points = news.find('span', class_ = 'score')
     print(points)
+
+for time in content.find_all('span', class_ = 'age'):
+    
+    times 
+
+
     
 
 
