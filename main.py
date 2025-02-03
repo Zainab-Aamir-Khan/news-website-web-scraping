@@ -15,8 +15,8 @@ print(heading.text)
 
 for news in mainContent.find_all('tr', class_ = 'athing submission'):
 
-    OfficialNews = news.find('span', class_ = 'titleline')
-    print(officialNews)
+    myNews = news.find('span', class_ = 'titleline').text
+    print(myNews)
 
 
 # print(mainContent)
