@@ -18,7 +18,7 @@ for news in mainContent.find_all('tr', class_ = 'athing submission'):
     myNews = news.find('span', class_ = 'titleline').text
     print(myNews)
 
-    time = span.a('href')
+    time = news.find('span', class_ = 'age')
     print(time)
     
 
