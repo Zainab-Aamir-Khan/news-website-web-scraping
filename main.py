@@ -15,16 +15,11 @@ print(heading.text)
 
 
 
-for news in mainContent.find_all('tr', class_ = 'athing submission'):
+for news in mainContent.find_all('tr', class_ = 'athing'):
 
 
     myNews = news.find('span', class_ = 'titleline').text
     print(myNews)
-
-for time in mainContent.find_all('span', class_ = 'age'):
-    
-    times = mainContent.find('span', class_='age').text
-    print(times)
 
 
     
