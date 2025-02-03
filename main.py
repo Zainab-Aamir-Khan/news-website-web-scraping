@@ -20,12 +20,11 @@ for news in mainContent.find_all('tr', class_ = 'athing submission'):
     myNews = news.find('span', class_ = 'titleline').text
     print(myNews)
 
-    points = news.find('span', class_ = 'score')
-    print(points)
 
 for time in content.find_all('span', class_ = 'age'):
     
-    times 
+    times = content.find('span', class_='age')
+    print(times)
 
 
     
