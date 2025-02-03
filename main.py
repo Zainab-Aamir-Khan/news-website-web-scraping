@@ -23,7 +23,7 @@ for news in mainContent.find_all('tr', class_ = 'athing submission'):
 
 for time in mainContent.find_all('span', class_ = 'age'):
     
-    times = content.find('span', class_='age').text
+    times = mainContent.find('span', class_='age').text
     print(times)
 
 
