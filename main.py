@@ -9,7 +9,7 @@ soup = BeautifulSoup(url, 'lxml')
 mainContent = soup.find('body')
 # print(mainContent.prettify())
 heading = mainContent.find('b', class_ = 'hnname')
-print(heading)
+print(heading.text)
 
 
 
